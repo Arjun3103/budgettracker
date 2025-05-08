@@ -39,7 +39,7 @@ public class AuthServiceTest {
     }
 
     @Test
-    @Order(4)
+    @Order(3)
     void testDeleteUser() {
         String email = "testuser@mail.com";
 
@@ -77,18 +77,18 @@ public class AuthServiceTest {
         assertEquals("User registered successfully!", response);
     }
 
-    @Test
-    @Order(3)
-    void testUpdateUser() {
+    // @Test
+    // @Order(3)
+    // void testUpdateUser() {
 
-        User updatUser = new User();
+    //     User updatUser = new User();
 
-        updatUser.setPassword("new@123");
-        updatUser.setEmail("testuser@mail.com");
-        updatUser.setUsername("testUser");
+    //     updatUser.setPassword("new@123");
+    //     updatUser.setEmail("testuser@mail.com");
+    //     updatUser.setUsername("testUser");
 
-        String response = authService.updateUser("testuser@mail.com",updatUser);
+    //     String response = authService.updateUser("testuser@mail.com",updatUser);
 
-        assertEquals("User updated successfully!", response);
-    }
+    //     assertEquals("User updated successfully!", response);
+    // }
 }

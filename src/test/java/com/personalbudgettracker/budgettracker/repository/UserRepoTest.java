@@ -32,6 +32,7 @@ public class UserRepoTest {
         user.setPassword("user@123");
         user.setUsername("user");
         user.setCreatedAt(LocalDateTime.of(2001, 1, 1, 0, 0));
+        userRepo.save(user);
 
         Optional<User> users = userRepo.findByEmail("user@tracker.com");
 
